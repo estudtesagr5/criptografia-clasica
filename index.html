@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Herramientas de Cifrado Clásico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cifrado y Descifrado Clásico</h1>
+    <p>Proyecto universitario - 5 algoritmos implementados</p>
+
+    <div class="algo">
+      <h2>1. Cifrado César</h2>
+      <input type="number" id="cesar-key" placeholder="Desplazamiento (1-25)" min="1" max="25" value="3"/>
+      <textarea id="cesar-input" placeholder="Texto aquí..."></textarea>
+      <div class="buttons">
+        <button onclick="cesarEncrypt()">Cifrar</button>
+        <button onclick="cesarDecrypt()">Descifrar</button>
+      </div>
+      <textarea id="cesar-output" readonly></textarea>
+    </div>
+
+    <div class="algo">
+      <h2>2. Cifrado Vigenère</h2>
+      <input type="text" id="vigenere-key" placeholder="Clave (solo letras)" value="CLAVE"/>
+      <textarea id="vigenere-input" placeholder="Texto aquí..."></textarea>
+      <div class="buttons">
+        <button onclick="vigenereEncrypt()">Cifrar</button>
+        <button onclick="vigenereDecrypt()">Descifrar</button>
+      </div>
+      <textarea id="vigenere-output" readonly></textarea>
+    </div>
+
+    <div class="algo">
+      <h2>3. Transposición Columnar</h2>
+      <input type="text" id="columnar-key" placeholder="Clave numérica ej. 3142" value="3142"/>
+      <textarea id="columnar-input" placeholder="Texto aquí..."></textarea>
+      <div class="buttons">
+        <button onclick="columnarEncrypt()">Cifrar</button>
+        <button onclick="columnarDecrypt()">Descifrar</button>
+      </div>
+      <textarea id="columnar-output" readonly></textarea>
+    </div>
+
+    <div class="algo">
+      <h2>4. Cifrado Atbash</h2>
+      <textarea id="atbash-input" placeholder="Texto aquí..."></textarea>
+      <div class="buttons">
+        <button onclick="atbash()">Cifrar / Descifrar</button>
+      </div>
+      <textarea id="atbash-output" readonly></textarea>
+    </div>
+
+    <div class="algo">
+      <h2>5. ROT13</h2>
+      <textarea id="rot13-input" placeholder="Texto aquí..."></textarea>
+      <div class="buttons">
+        <button onclick="rot13()">Convertir</button>
+      </div>
+      <textarea id="rot13-output" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
