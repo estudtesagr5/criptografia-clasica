@@ -12,6 +12,7 @@ El objetivo principal es demostrar el funcionamiento básico de estos algoritmos
 La aplicación se encuentra desplegada en la nube y es accesible públicamente desde Internet en la siguiente dirección:
 
 http://46.4.247.60
+https://criptografia-gr5.duckdns.org
 
 ---
 
@@ -36,6 +37,7 @@ Cada algoritmo permite realizar el ciclo completo de cifrado y descifrado del me
 - **Ubuntu Linux**: sistema operativo del servidor
 - **Nginx**: servidor web
 - **Ubicloud**: plataforma cloud para el despliegue de la aplicación
+- **DuckDNS + Let's Encrypt**: dominio dinámico y certificado HTTPS 
 
 ---
 
@@ -56,3 +58,12 @@ Para ejecutar el proyecto de forma local:
    ```bash
    git clone https://github.com/estudtesagr5/criptografia-clasica
 2. Abrir el archivo index.html en cualquier navegador web moderno.
+
+## ⚠️ Advertencia
+
+Los algoritmos implementados en esta aplicación tienen fines exclusivamente educativos.
+No deben utilizarse para proteger información sensible en entornos reales, ya que no ofrecen seguridad criptográfica moderna.
+
+## 👨‍🎓 Autor : Osc_Dav_Ush_Bon
+
+Proyecto académico desarrollado como parte de un trabajo universitario.
